@@ -6,7 +6,7 @@
 [rewrite_local]
 
 
-^https?:\/\/notability\.com\/subscriptions url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.js
+^https?:\/\/notability\.com\/subscriptions url script-response-body https://raw.githubusercontent.com/KyleNiu0x00/Scripts/main/Rewrite/Notability.js
 
 [mitm] 
 
