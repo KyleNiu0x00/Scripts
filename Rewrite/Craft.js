@@ -5,7 +5,7 @@
 
 [rewrite_local]
 
-^https:\/\/api\.craft\.do\/auth\/v2\/profile url script-response-body https://raw.githubusercontent.com/gjwj666/jichang/main/Craft.js
+^https:\/\/api\.craft\.do\/auth\/v2\/profile url script-response-body https://raw.githubusercontent.com/KyleNiu0x00/Scripts/main/Rewrite/Craft.js
 
 [mitm] 
 
