@@ -1,7 +1,0 @@
-host, sdk.adtiming.com, reject
-host, ads.api.vungle.com, reject
-host, config.unityads.unitychina.cn, reject
-host, auction.unityads.unity.cn, reject
-host, sdk-diagnostics.prd.mz.internal.unity.cn, reject
-host, events.mz.unity3d.com, reject
-host, m.adtiming.com, reject
