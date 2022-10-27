@@ -10,7 +10,7 @@ host, sdk-diagnostics.prd.mz.internal.unity.cn, reject
 host, events.mz.unity3d.com, reject
 host, m.adtiming.com, reject
 #DuolingoPlusNoAd
-host-SUFFIX,rollbar.com
-host-SUFFIX,fumacrom.com
-host-SUFFIX,applovefrom.com
-host-SUFFIX,xervoo.net
+host-suffix, rollbar.com, reject
+host-suffix, fumacrom.com, reject
+host-suffix, applovefrom.com, reject
+host-suffix, xervoo.net, reject
