@@ -10,7 +10,7 @@
 # wiki  (维基百科)
 ^https:\/\/duckduckgo\.com\/\?q=wiki(\+|%20)([^&]+).+ 302 http://wikipedia.org/wiki/$1
 # wk  (维基中文)
-^https:\/\/duckduckgo\.com\/\?q=wk(\+|%20)([^&]+).+ 302 https://zh.wikipedia.org/wiki/$1
+^https:\/\/duckduckgo\.com\/\?q=wk(\+|%20)([^&]+).+ 302 https://zh.m.wikipedia.org/wiki/$1
 # tf  (Google 搜索 TestFlight)
 ^https:\/\/duckduckgo\.com\/\?q=tf(\+|%20)([^&]+).+ 302 https://www.google.com/search?as_q=$2&as_sitesearch=testflight.apple.com 
 # gtc  (Google 译至中)
@@ -53,24 +53,32 @@
 # ytb  (YouTube)
 ^https:\/\/duckduckgo\.com\/\?q=ytb\+([^&]+).+ 302 https://www.youtube.com/results?search_query=$1 
 # ph  (PornHub) 
-^https:\/\/duckduckgo\.com\/\?q=ph\+([^&]+).+ 302 https://cn.pornhub.com/video/search?search=$1 
+^https:\/\/duckduckgo\.com\/\?q=ph\+([^&]+).+ 302 https://cn.pornhub.com/video/search?search=$1
+# jb jable.tv
+^https:\/\/duckduckgo\.com\/\?q=jb\+([^&]+).+ 302 https://jable.tv/search/$1/
+# nf netflav
+^https:\/\/duckduckgo\.com\/\?q=nf\+([^&]+).+ 302 https://netflav.com/search?type=title&keyword=$1
+# ma missav
+^https:\/\/duckduckgo\.com\/\?q=ma\+([^&]+).+ 302 https://missav.com/search/$1
+# hp hpjav
+^https:\/\/duckduckgo\.com\/\?q=hp\+([^&]+).+ 302 https://hpjav.tv/?s=$1
 # gd  (Google Drive)
 ^https:\/\/duckduckgo\.com\/\?q=gd\+([^&]+).+ 302 https://www.google.com/search?q=%22Google+Drive%22+$1 
 # tgd  (t.me/gdurl 搜索 Google Drive 资源)
 ^https:\/\/duckduckgo\.com\/\?q=tgd\+([^&]+).+ 302 https://t.me/s/gdurl?q=$1 
 # 默认搜索
 # bi: 必应
-^https:\/\/duckduckgo\.com\/\?q=bi\+([^&]+).+ 302 https://cn.bing.com/search?q=$1 
+^https:\/\/duckduckgo\.com\/\?q=bi\+([^&]+).+ 302 https://cn.bing.com/search?q=$1
 # b: 百度
-^https:\/\/duckduckgo\.com\/\?q=b\+([^&]+).+ 302 https://www.baidu.com/s?wd=$1 
+^https:\/\/duckduckgo\.com\/\?q=b\+([^&]+).+ 302 https://www.baidu.com/s?wd=$1
 # ddg: DuckDuckGo 
-^https:\/\/duckduckgo\.com\/\?q=ddg\+([^&]+).+ 302 https://duckduckgo\.com/?ia=about&q=$1 
+^https:\/\/duckduckgo\.com\/\?q=ddg\+([^&]+).+ 302 https://duckduckgo\.com/?ia=about&q=$1
 # 无指令: 谷歌
-^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 302 https://www.google.com/search?q=$1 
+^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 302 https://www.google.com/search?q=$1
 # gq  xxx（歌曲宝）
-^https:\/\/duckduckgo\.com\/\?q=gq\+([^&]+).+ 302 https://www.gequbao.com/s/$1 
+^https:\/\/duckduckgo\.com\/\?q=gq\+([^&]+).+ 302 https://www.gequbao.com/s/$1
 # m  xxx (MP3下载)
-^https:\/\/duckduckgo\.com\/\?q=m\+([^&]+).+ 302 https://www.fangpi.net/s/$1 
+^https:\/\/duckduckgo\.com\/\?q=m\+([^&]+).+ 302 https://www.fangpi.net/s/$1
 # cn  (切换至中国区)
 ^https:\/\/duckduckgo\.com\/\?q=cn&.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?
 
