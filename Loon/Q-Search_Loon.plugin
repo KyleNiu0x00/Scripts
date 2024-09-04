@@ -71,14 +71,15 @@
 ^https:\/\/duckduckgo\.com\/\?q=bi\+([^&]+).+ 302 https://cn.bing.com/search?q=$1
 # b: 百度
 ^https:\/\/duckduckgo\.com\/\?q=b\+([^&]+).+ 302 https://www.baidu.com/s?wd=$1
-# ddg: DuckDuckGo 
-^https:\/\/duckduckgo\.com\/\?q=ddg\+([^&]+).+ 302 https://duckduckgo\.com/?ia=about&q=$1
-# 无指令: 谷歌
-^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 302 https://www.google.com/search?q=$1
 # gq  xxx（歌曲宝）
 ^https:\/\/duckduckgo\.com\/\?q=gq\+([^&]+).+ 302 https://www.gequbao.com/s/$1
 # m  xxx (MP3下载)
 ^https:\/\/duckduckgo\.com\/\?q=m\+([^&]+).+ 302 https://www.fangpi.net/s/$1
+#zk   xxx (砸壳搜索)
+^https:\/\/duckduckgo\.com\/\?q=zk\+([^&]+).+ 302 https://armconverter.com/decryptedappstore/us/$1
+# yh  xxx (油猴搜索)
+^https:\/\/duckduckgo\.com\/\?q=yh\+([^&]+).+ 302 https://greasyfork.org/zh-CN/scripts?q=$1
+
 # cn  (切换至中国区)
 ^https:\/\/duckduckgo\.com\/\?q=cn&.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?
 
@@ -99,10 +100,10 @@ mt=8&id=1108187390&cc=us&urlDesc=
 ^https:\/\/duckduckgo\.com\/\?q=jp&.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?
 
 mt=8&id=1108187390&cc=jp&urlDesc=
-#zk   xxx (砸壳搜索)
-^https:\/\/duckduckgo\.com\/\?q=zk\+([^&]+).+ 302 https://armconverter.com/decryptedappstore/us/$1
-# yh  xxx (油猴搜索)
-^https:\/\/duckduckgo\.com\/\?q=yh\+([^&]+).+ 302 https://greasyfork.org/zh-CN/scripts?q=$1
+# ddg: DuckDuckGo 
+^https:\/\/duckduckgo\.com\/\?q=ddg\+([^&]+).+ 302 https://duckduckgo\.com/?ia=about&q=$1
+# 无指令: 谷歌
+^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 302 https://www.google.com/search?q=$1
 
 [Mitm]
 hostname = duckduckgo.com
