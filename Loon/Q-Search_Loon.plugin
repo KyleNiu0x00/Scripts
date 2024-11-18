@@ -59,7 +59,7 @@
 # nf netflav
 ^https:\/\/duckduckgo\.com\/\?q=nf\+([^&]+).+ 302 https://netflav.com/search?type=title&keyword=$1
 # ma missav
-^https:\/\/duckduckgo\.com\/\?q=ma\+([^&]+).+ 302 https://missav.com/search/$1
+^https:\/\/duckduckgo\.com\/\?q=ma\+([^&]+).+ 302 https://www.missav.com/search/$1
 # hp hpjav
 ^https:\/\/duckduckgo\.com\/\?q=hp\+([^&]+).+ 302 https://hpjav.tv/?s=$1
 # gd  (Google Drive)
