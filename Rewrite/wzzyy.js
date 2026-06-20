@@ -10,9 +10,6 @@ https://apps.apple.com/id6755513958
 
 ^http:\/\/member\.lizhikeji\.com\/api\/user url script-response-body https://raw.githubusercontent.com/KyleNiu0x00/Scripts/refs/heads/main/Rewrite/wzzyy.js
 
-
-
-^http:\/\/xihongshi\.dicallapp\.com\/SDGetMeCount\.ashx url script-response-body https://raw.githubusercontent.com/afengye/QX/main/py.js
 [mitm] 
 hostname = member.lizhikeji.com, member.honghukeji.work
 *******************************/
