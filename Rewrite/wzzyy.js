@@ -17,7 +17,7 @@ let body = $response.body;
 let obj = JSON.parse(body);
 
 
-    obj.result.isVip = 1;
+    obj.result.expiresDate = “2099-12-31T23:59:59Z”;
     obj.result.isPermanent = true;
 
 
