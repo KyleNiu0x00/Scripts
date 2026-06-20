@@ -18,8 +18,8 @@ var obj = JSON.parse(KyleNiu);
 
 var vipInfo = {
   "data": {
-    "isPermanent": true,
-    "expiresDate": "2099-12-31T23:59:59.000+0800"
+    "isPermanent": false,
+    "expiresDate": "2099-12-31"
   }
 };
 
