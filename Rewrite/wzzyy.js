@@ -17,7 +17,10 @@ var KyleNiu = $response.body;
 var obj =  JSON.parse(KyleNiu);
 
 var vipInfo = {
-  "isPermanent": true
+    “data" : {
+      "isPermanent" : true,
+      "expiresDate" : "2099-12-31T23:59:59.000+0800"
+    ｝
 }
 
 for (let key in obj.result) {
@@ -28,4 +31,3 @@ for (let key in obj.result) {
 
 KyleNiu = JSON.stringify(obj);
 $done(KyleNiu);
-
