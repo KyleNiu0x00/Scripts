@@ -14,18 +14,18 @@ https://apps.apple.com/id6755513958
 hostname = member.lizhikeji.com, member.honghukeji.work
 *******************************/
 var KyleNiu = $response.body;
-var obj =  JSON.parse(KyleNiu);
+var obj = JSON.parse(KyleNiu);
 
 var vipInfo = {
-    “data" : {
-      "isPermanent" : true,
-      "expiresDate" : "2099-12-31T23:59:59.000+0800"
-    ｝
-}
+  "data": {
+    "isPermanent": true,
+    "expiresDate": "2099-12-31T23:59:59.000+0800"
+  }
+};
 
-for (let key in obj.result) {
-  if (vipInfo.hasOwnProperty(key)) {
-     obj.result[key] = vipInfo[key]
+for (let key in vipInfo) {
+  if (obj.hasOwnProperty(key)) {
+    obj[key] = vipInfo[key];
   }
 }
 
