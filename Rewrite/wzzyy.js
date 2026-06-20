@@ -13,13 +13,19 @@ https://apps.apple.com/id6755513958
 [mitm] 
 hostname = member.lizhikeji.com, member.honghukeji.work
 *******************************/
-let body = $response.body;
-let obj = JSON.parse(body);
+var KyleNiu = $response.body;
+var obj =  JSON.parse(KyleNiu);
 
+var vipInfo = {
+  "isPermanent": true
+}
 
-    obj.result.expiresDate = “2099-12-31T23:59:59Z”;
-    obj.result.isPermanent = true;
+for (let key in obj.result) {
+  if (vipInfo.hasOwnProperty(key)) {
+     obj.result[key] = vipInfo[key]
+  }
+}
 
+KyleNiu = JSON.stringify(obj);
+$done(KyleNiu);
 
-body = JSON.stringify(obj);
-$done({body});
